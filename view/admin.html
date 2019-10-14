@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/adminpage.css">
+        <title>Admin Panel</title>
+    </head>
+
+    <body class="wrapper">
+        <div class="centerarea">
+            <span class="title">Admin Panel</span>
+        </div>
+        <form class="formarea" action="../back-end/adminbackend.php"> 
+            Product name:<br/>
+            <input type="text" name="name" placeholder="Product name"/>
+            <br/>
+            Product price:<br/>
+            <input type="number" min="0" name="name" oninput="validity.valid||(value='');" placeholder="Product price"/>
+            <br/>
+            Product catorgory:<br/>
+            <select>
+                <option>Game</option>
+                <option>Film</option>
+                <option>Food</option>
+                <option>Mobile</option>
+            </select>
+            <br/>
+            Product image:<br/>
+            <input type="file" name="pic" accept="image/">
+            <br/>
+            <input type="submit" value="Submit"/>
+        </form>
+        
+    </body>
+</html>
